@@ -1,0 +1,2 @@
+# Phase 2 — Ingestion pipeline placeholder
+# Will contain: loaders.py, splitter.py, embeddings.py, vector_store.py, cli.py

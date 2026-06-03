@@ -1,0 +1,12 @@
+[
+  {
+    "question": "What is Retrieval-Augmented Generation?",
+    "ground_truth": "RAG is a technique that combines a retrieval system with a language model. The retrieval step fetches relevant context from a knowledge base, and the generation step uses that context to produce an accurate, grounded answer.",
+    "reference_source": "example_doc.pdf"
+  },
+  {
+    "question": "Why does InsightAgent cite sources inline?",
+    "ground_truth": "Inline citations allow users to verify every factual claim against the original document, building trust and making it easy to find the full source material.",
+    "reference_source": "README.md"
+  }
+]

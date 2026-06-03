@@ -1,0 +1,49 @@
+# ── Core Framework ────────────────────────────────────────────────────────────
+# Pins removed — let pip resolve the mutually-compatible set.
+# After a successful install, run:
+#   pip freeze > requirements.lock   (to lock for reproducibility)
+langchain>=0.3.25
+langchain-core>=0.3.63
+langchain-community>=0.3.24
+langgraph>=0.4.8
+langgraph-checkpoint>=2.0.26
+
+# ── LLM Providers ────────────────────────────────────────────────────────────
+langchain-openai>=0.3.19
+langchain-anthropic>=0.3.15
+langchain-google-genai>=2.0.0
+
+# ── Embeddings + Vector Store ─────────────────────────────────────────────────
+langchain-chroma>=0.2.4
+chromadb>=0.6.3
+
+# ── Document Loaders ─────────────────────────────────────────────────────────
+pypdf>=5.6.0
+langchain-text-splitters>=0.3.8
+
+# ── Web Search Tool ───────────────────────────────────────────────────────────
+tavily-python>=0.5.1
+langchain-tavily>=0.1.6
+
+# ── API Layer ─────────────────────────────────────────────────────────────────
+fastapi>=0.115.12
+uvicorn[standard]>=0.34.3
+pydantic>=2.11.5
+pydantic-settings>=2.9.1
+
+# ── Frontend ──────────────────────────────────────────────────────────────────
+streamlit>=1.45.1
+requests>=2.32.3
+
+# ── Evaluation ────────────────────────────────────────────────────────────────
+ragas>=0.2.15
+datasets>=3.6.0
+
+# ── Observability ─────────────────────────────────────────────────────────────
+langsmith>=0.3.45
+
+# ── Dev / Testing ─────────────────────────────────────────────────────────────
+pytest>=8.3.5
+pytest-asyncio>=0.25.3
+python-dotenv>=1.1.0
+httpx>=0.28.1
