@@ -1,11 +1,20 @@
 """
-agent
-─────
-LangGraph agentic layer for InsightAgent.
+agent/__init__.py
+─────────────────
+Public API for the InsightAgent agentic layer.
 
-Built in Phase 3–5:
-  graph.py   — StateGraph definition (agent ↔ tools loop)
-  tools.py   — retrieve_documents, web_search tool functions
-  prompts.py — system prompt with grounding and citation rules
-  memory.py  — checkpointer factory (MemorySaver / PostgresSaver)
+Phase 3 exports:
+  ask()        — single-turn RAG query → RAGResponse
+  ask_stream() — streaming token generator
+
+Phase 4+ will add:
+  run_agent()  — LangGraph agentic loop with web_search
 """
+from agent.rag_chain import RAGResponse, Citation, ask, ask_stream
+
+__all__ = [
+    "RAGResponse",
+    "Citation",
+    "ask",
+    "ask_stream",
+]

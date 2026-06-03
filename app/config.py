@@ -46,12 +46,12 @@ class Settings(BaseSettings):
     # ── Google Gemini ─────────────────────────────────────────────────────────
     gemini_api_key: str = Field(default="", description="Google Gemini API key.")
     gemini_model: str = Field(
-        default="gemini-2.0-flash",
-        description="Gemini chat model name.",
+        default="gemini-2.5-flash",
+        description="Gemini chat model name (e.g. gemini-2.5-flash).",
     )
     gemini_embedding_model: str = Field(
-        default="models/text-embedding-004",
-        description="Gemini embedding model name.",
+        default="gemini-embedding-001",
+        description="Gemini embedding model name (e.g. gemini-embedding-001).",
     )
 
     # ── Embeddings ────────────────────────────────────────────────────────────
